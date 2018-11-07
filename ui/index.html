@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Shop - MongoDB">
+    <meta name="author" content="Eoin McGrath">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/1.0.0/awesome-bootstrap-checkbox.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+    <title>Shop</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- INSERT FORM-->
+      <br><br>
+    <div class="container">
+     <h2>Insert</h2> 
+    <form action="/products" method="post">
+      <div class="input">
+        <label for="Product">Product</label>
+        <input type="text" id="name" name="name"/>
+      </div>
+      <div class="input">
+        <label for="price">Price</label>
+        <input type="text" id="price" name="price"/>
+      </div>
+      <button type="submit" name="products">Insert</button>
+    </form>
+    </div>
+
+
+    <!--READ FORM-->
+    <br><br>
+    <div class="container">
+      <h2>Read</h2>
+      <form action="/products/" method="get">
+      <button  method="get">LOAD DATA</button>
+      </form>
+    </div>
+    <br><br>
+
+
+    <!-- UPDATE FORM-->
+    <div class="container">
+      <h2>UPDATE</h2>
+      <form action="products/id" method="post">
+          <div class="input">
+              <label for="ID">ID</label>
+              <input type="text" id="productId" name="productId"/>
+            </div>
+            <div class="input">
+              <label for="Product">Product</label>
+              <input type="text" id="name" name="name"/>
+            </div>
+            <div class="input">
+              <label for="Price">Price</label>
+              <input type="text" id="price" name="price"/>
+            </div> 
+            <button type="submit">Update</button>
+      </form>
+    </div>
+
+
+    <!-- DELETE FORM-->
+<br><br>
+    <div class="container">
+      <h2>DELETE</h2>
+      <form action="" method="">
+        <div class="input">
+          <label for="ID">ID</label>
+          <input type="text" id="productId" name="productId"/>
+        </div>
+        <button type="submit">Delete</button>
+      </form>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+</html>
